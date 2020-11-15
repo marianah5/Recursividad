@@ -1,0 +1,26 @@
+var encontrar= [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]; 
+mayor = encontrar[0]; 
+menor = encontrar[0];
+
+for( var i = 0; i <10; i++){
+   if( encontrar[i] > mayor ) {
+       mayor = encontrar[i];
+   }
+   if( encontrar[i] < menor ) {
+        menor = encontrar[i];
+   }
+}
+
+var suma = 0;
+
+for (var i = 0; i < encontrar.length; ++i)
+{
+  suma += encontrar[i];
+}
+
+document.write ("El número mayor de la lista es: ");
+document.write (mayor);
+document.write ("<br/><br/>El número menor de la lista es: ");
+document.write (menor);
+document.write ("<br/><br/>El promedio de la lista es: ");
+document.write (suma / 10);
