@@ -1,0 +1,18 @@
+function texto ( cadena ) {
+  document.write ( cadena + "<br>" );
+}
+function factorial (num) {
+  if (num <= 1){ 
+        return 1;
+  }
+    else {
+        return num * factorial (num - 1);
+       
+    }
+}
+var n = 4
+respuesta = factorial ( n );
+
+
+texto ( "FACTORIAL RECURSIVO DE N" );
+texto ( n + "! = " + respuesta ); 
