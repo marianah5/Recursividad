@@ -1,0 +1,18 @@
+function texto ( cadena ) {
+  document.write ( cadena + "<br>" );
+}
+function sumatoria (num) {
+if (num === 0){ 
+      return 0;
+  }
+    else {
+        return num + sumatoria (num - 1);
+       
+    }
+}
+var n = 4
+respuesta = sumatoria ( n );
+
+
+texto ( "SUMATORIA RECURSIVA DE N" );
+texto ( n + " = " + respuesta ); 
